@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
 .wrapper {
-    height: 100vh;
-    width: 100%;
-    background-color: #22a253;
+  height: 100vh;
+  width: 100%;
+  background-image: url('P_Manohara_Reddy.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50%;
+  background-color: black;
 }
 #clocktext{
   background: #25283D;
@@ -14,16 +19,17 @@
   font-size: xxx-large;
   font-weight: bold;
   font-family:'Times New Roman', Times, serif;
-  
 }
+
 #clock {
   width: 280px;
   height: 280px;
   background: #484e87;
   border: 18px solid #11142e;
   border-radius: 50%;
-  margin: 200px auto 60px;
   position: relative;
+  margin-left: 59rem;
+  margin-top: 10.2rem;
   box-shadow: inset 0 5px 25px #00000080,
   0 5px 25px #00000080,
   0 5px 30px #00000080,
@@ -43,6 +49,7 @@
   border-radius: 50%;
   z-index: -2;
 }
+
 #clock:after {
   content: '';
   width: 18px;
@@ -54,10 +61,12 @@
   top: calc(50% - 9px);
   box-shadow: 0 2px 4px #00000026;
 }
+
 #clock li {
   list-style-type: none;
   position: absolute;
 }
+
 .numbers {
   position: absolute;
   width: 90%;
@@ -65,12 +74,14 @@
   padding: 5%;
   text-align: center;
 }
+
 .numbers span {
   display: block;
   color: #dbe7fd;
   font-size: 38px;
   text-shadow: 0 5px 18px #00000026, 0 2px 3px #00000033;
 }
+
 .numbers:nth-child(1) {
   transform: rotate(30deg);
 }
@@ -173,7 +184,7 @@
 #hour {
   width: 100%;
   height: 100%;
-  transform: rotate(120deg);
+  transform: rotate(180deg);
 }
 
 #hour:after {
